@@ -67,8 +67,9 @@ const Chatbox = () => {
 
 
     return ( 
-        <div className='flex flex-col justify-center items-center gap-5 animate-[scaleIn_0.3s_ease-out]
-                        bg-neutral-100 text-zinc-950 min-h-screen dark:bg-zinc-950 dark:text-neutral-100'>
+        <div className='bg-neutral-100 dark:bg-zinc-950 text-zinc-950 dark:text-neutral-100
+                        flex flex-col justify-center items-center gap-5 min-h-screen
+                        animate-[scaleIn_0.3s_ease-out_backwards]'>
             {roomCode && (
             <div className='flex flex-col justify-center items-center gap-2 md:pt-0 pt-5'>
                 <h1 className='md:text-4xl text-3xl'>Real Time Chat Room</h1>

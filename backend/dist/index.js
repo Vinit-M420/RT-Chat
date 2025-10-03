@@ -32,8 +32,6 @@ ws.on("connection", (socket) => {
                 }
             }
         }
-        // console.log("message recieved " + message.toString());
-        // allSockets.forEach(s => s.send(message.toString() + " : sent from the server"));
     });
     socket.on("disconnect", () => {
         allSockets = allSockets.filter(x => x.socket != socket);

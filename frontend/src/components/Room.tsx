@@ -31,10 +31,12 @@ const Room = () => {
     return (
         <div className='flex flex-col justify-center items-center gap-5 h-screen
                         dark:bg-zinc-950 bg-neutral-100'>
-            <h1 className='dark:text-neutral-100 md:text-4xl text-3xl text-zinc-950'>
+            <h1 className='dark:text-neutral-100 md:text-6xl text-3xl font-semibold text-zinc-950'>
                 Real Time Chat Room
             </h1>     
-            {/* <h2 className="w-lg text-center">Simple Chat Rooms to communicate with your buddies</h2> */}
+            <h2 className="w-lg text-center dark:text-neutral-100">
+                Powered by Websocket, Typescript, React and NodeJS.
+            </h2>
             <button 
                 className='dark:bg-neutral-100 bg-zinc-950 text-neutral-100 dark:text-zinc-950
                     py-2 px-6 rounded-2xl font-semibold cursor-pointer transition duration-200
@@ -52,7 +54,7 @@ const Room = () => {
                     <div className="flex gap-10">
                         <div className="flex gap-3 items-center">
                             <input minLength={0} maxLength={6} 
-                                value={roomCode} 
+                                value={roomCode} autoFocus
                                 className="md:text-4xl text-3xl tracking-widest font-semibold 
                                         text-gray-400 field-sizing-content uppercase"
                                 onChange={(e) => setRoomCode(e.target.value.toUpperCase()) }>
