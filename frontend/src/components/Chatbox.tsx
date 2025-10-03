@@ -97,7 +97,7 @@ const Chatbox = () => {
                     {messages.map((msgInfo, index) => 
                     <div key={index} 
                         className={`dark:text-black dark:bg-white bg-black text-white 
-                            py-1 px- w-fit rounded  ${msgInfo.isOwn ?  "ml-auto" : "mr-auto"}`}>
+                            py-1 px-2 w-fit rounded  ${msgInfo.isOwn ?  "ml-auto" : "mr-auto"}`}>
                         {msgInfo.message}
                     </div>
                     )}
